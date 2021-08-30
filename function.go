@@ -129,6 +129,7 @@ type FunctionCreateObject struct {
 	Timeout               *int32                 `json:"timeout"`
 	InitializationTimeout *int32                 `json:"initializationTimeout"`
 	MemorySize            *int32                 `json:"memorySize"`
+	GpuMemorySize         *int32                 `json:"gpuMemorySize"`
 	InstanceConcurrency   *int32                 `json:"instanceConcurrency"`
 	Code                  *Code                  `json:"code"`
 	EnvironmentVariables  map[string]string      `json:"environmentVariables"`
