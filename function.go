@@ -175,6 +175,11 @@ func (i *CreateFunctionInput) WithMemorySize(memory int32) *CreateFunctionInput 
 	return i
 }
 
+func (i *CreateFunctionInput) WithGpuMemorySize(memory int32) *CreateFunctionInput {
+	i.GpuMemorySize = &memory
+	return i
+}
+
 func (i *CreateFunctionInput) WithInstanceConcurrency(concurrency int32) *CreateFunctionInput {
 	i.InstanceConcurrency = &concurrency
 	return i
@@ -333,6 +338,11 @@ func (i *UpdateFunctionInput) WithTimeout(timeout int32) *UpdateFunctionInput {
 
 func (i *UpdateFunctionInput) WithMemorySize(memory int32) *UpdateFunctionInput {
 	i.MemorySize = &memory
+	return i
+}
+
+func (i *UpdateFunctionInput) WithGpuMemorySize(memory int32) *UpdateFunctionInput {
+	i.GpuMemorySize = &memory
 	return i
 }
 
